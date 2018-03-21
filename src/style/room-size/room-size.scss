@@ -1,0 +1,24 @@
+// 顶部logo-box尺寸变量
+$all-width: 100%;
+$log-height: 60px;
+
+$fifty-px: 15px;
+$ten-px: 10px;
+
+$five-lHeight: 4.2;
+
+/*尺寸类名*/
+
+.logo-box {
+    width: $all-width;
+    height: $log-height;
+    padding: 0 $fifty-px;
+    overflow: hidden;
+    .container-fluid{
+        line-height: $five-lHeight;
+        img {
+            margin-top: 1%;
+        }
+    }
+   
+}

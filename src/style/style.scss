@@ -1,0 +1,33 @@
+/*引入文件*/
+@import 'color/color';
+@import 'margin/margin';
+@import 'room-size/room-size';
+
+/*全局变量设定*/
+
+/*全局样式*/
+
+/*
+路由导航
+*/
+.row {
+    padding: 10px 15px;
+    .site-menus {
+        list-style: none;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        li{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            &:hover, .active{
+                border-left:3px solid $theme-color;
+                border-top: 1px solid $gray;
+                border-bottom: 1px solid $gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/*变量名*/
+$theme-color: #349bff;
+$blue: skyblue;
+$white: #fff;
+$gray: #f2f2f2;
+$cyan: #00ffff;;
+
+/*类名*/
+.white {
+    color: $white;
+}
+
+.gray{
+    color: $gray;
+}
+.bg-gray{
+    background: $gray;
+}
+.bg-cyan{
+    background:$cyan;
+}
+.blue {
+    color: $theme-color;
+}
+ 
+.bg-blue {
+    background: $theme-color;
+}

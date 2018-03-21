@@ -1,0 +1,20 @@
+<!-- 第一层菜单视图模版 -->
+<div class="row">
+    <div class="col-lg-2" style="padding-right: 0">
+        <div class="panel panel-default allover-menu" style="overflow-y: hidden;">
+            <ul class="site-menus">
+                <li routerLinkActive="active" *ngFor="let item of pageRouter; let i = index" >
+                    <a class="link-dark" [routerLink]="[item.url]">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-10">
+        <div class="panel panel-default allover-menu" style="overflow-y: hidden">
+            <div class="panel-body">
+                <!-- 第一层菜单视图容器 -->
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

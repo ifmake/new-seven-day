@@ -1,0 +1,31 @@
+<div class="site-header bg-cyan">
+  <!-- logo box -->
+  <div class="logo-box clearfix" style="background: transparent">
+    <div class="container-fluid">
+      <img class="pull-left" [src]="logoPath" alt="...">
+      <div class="pull-right">
+        <div class="toolbar white">
+          <span class="fa-blue">管理员</span>你好，
+          <span>今天是{{nowTime|date : 'yyyy年MM月dd日，EEEE'}}</span>
+          <a (click)="staticModal.show()" style="cursor: pointer">
+            <span>
+              <i class="fa fa-fw fa-power-off" aria-hidden="true"></i> 注销</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navigation -->
+  <div class="site-navbar">
+    <div class="container-fluid">
+      <ul class="nav nav-pills">
+        <li role="presentation" *ngFor="let nav of topNav; let i of index;" [routerLinkActive]="['active']">
+          <a [routerLink]="[nav.url]">{{nav.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--入口-->
+  <router-outlet></router-outlet>
