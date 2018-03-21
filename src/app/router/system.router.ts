@@ -4,10 +4,10 @@ import { OrganComponent } from '../components/system/organ/organ.component';
 
 export const systemRouter: Routes = [
     {
-        path: '', component: SystemComponent,
+        path: 'system', component: SystemComponent,
         children: [
             { path: '', redirectTo: 'organ', pathMatch: 'full' },
-            // { path: 'organ', component: OrganComponent},
+            { path: 'organ', component: OrganComponent},
             // { path: 'rights', loadChildren: './components/system/system.module#SystemModule' },
             // { path: 'manage', loadChildren: './components/audit/audit.module#AuditModule' },
             // { path: 'examine', loadChildren: './components/audit/audit.module#AuditModule' }

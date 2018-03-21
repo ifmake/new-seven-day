@@ -6,12 +6,10 @@ import { CommonModule } from '@angular/common';
 
 import { systemRouter } from '../../router/system.router';
 import { OrganComponent } from "./organ/organ.component";
-import { SystemComponent } from "../system/system.component";
 
 @NgModule({
     declarations: [
         OrganComponent,
-        SystemComponent
     ],
     imports: [
         CommonModule,
