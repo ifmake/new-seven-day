@@ -6,9 +6,9 @@ import { CommonComponent } from '../../common/common.component';
     templateUrl: './rights.component.html'
 })
 
-export class RightsComponent extends CommonComponent implements OnInit {
-    constructor() {
-        super()
-    }
-    ngOnInit() { }
-}
+  export class RightsComponent extends CommonComponent implements OnInit {
+      constructor() {
+          super();
+      }
+      ngOnInit() { }
+  }

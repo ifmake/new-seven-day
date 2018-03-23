@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { stockRouter } from '../../router/stock.router';
-import { StockComponent } from "../stock/stcok.component";
+import {StockComponent} from './stcok.component';
 
 @NgModule({
     declarations: [

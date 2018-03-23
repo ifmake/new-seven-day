@@ -28,9 +28,10 @@
             &:hover{
                 border-left:3px solid $theme-color;
             }
-            .active{
-                border-left:3px solid $theme-color;
-            }
         }
+      .active{
+        border-left:3px solid $theme-color;
+      }
     }
 }
+

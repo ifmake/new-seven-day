@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonComponent } from '../common/common.component'
+import { CommonComponent } from '../common/common.component';
 
 @Component({
     selector: 'app-system',
@@ -8,13 +8,13 @@ import { CommonComponent } from '../common/common.component'
 
 export class BuyComponent extends CommonComponent implements OnInit {
     constructor() {
-        super()
+        super();
         this.pageRouter = [
-            { name: '供方管理', url: 'organ' },
-            { name: '采购任务', url: 'rights' },
-            { name: '订单管理', url: 'manage' },
-            { name: '到货管理', url: 'examine' },
-        ]
+            { name: '供方管理', url: 'provide' },
+            { name: '采购任务', url: 'procurement' },
+            { name: '订单管理', url: 'buy-order' },
+            { name: '到货管理', url: 'receipt' },
+        ];
     }
     ngOnInit() { }
 }

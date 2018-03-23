@@ -10,11 +10,11 @@ import { GlobalService } from 'app/services/global-service';
 export class AppComponent extends CommonComponent implements OnInit{
   // logo位置
   logoPath: string;
-  
+
   // 导航数据
   topNav = [
     { name: '登陆', url: 'login' },
-    { name: '系统设置', url:'system'},
+    { name: '系统设置', url: 'system'},
     { name: '库存管理', url: 'stock' },
     { name: '销售管理', url: 'sell' },
     { name: '采购管理', url: 'buy' },

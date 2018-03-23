@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { systemRouter } from '../../router/system.router';
-import { OrganComponent } from "./organ/organ.component";
+import { OrganComponent } from './organ/organ.component';
 
 @NgModule({
     declarations: [
