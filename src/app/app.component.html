@@ -1,13 +1,13 @@
-<div class="site-header bg-cyan">
+<div class="site-header" *ngIf="navShow">
   <!-- logo box -->
   <div class="logo-box clearfix" style="background: transparent">
     <div class="container-fluid">
       <img class="pull-left" [src]="logoPath" alt="...">
       <div class="pull-right">
-        <div class="toolbar white">
+        <div class="toolbar">
           <span class="fa-blue">管理员</span>你好，
           <span>今天是{{nowTime|date : 'yyyy年MM月dd日，EEEE'}}</span>
-          <a (click)="staticModal.show()" style="cursor: pointer">
+          <a (click)="loginOut()" style="cursor: pointer">
             <span>
               <i class="fa fa-fw fa-power-off" aria-hidden="true"></i> 注销</span>
           </a>
@@ -17,7 +17,7 @@
   </div>
 
   <!-- navigation -->
-  <div class="site-navbar">
+  <div class="site-navbar grdient">
     <div class="container-fluid">
       <ul class="nav nav-pills">
         <li role="presentation" *ngFor="let nav of topNav; let i of index;" [routerLinkActive]="['active']">
@@ -27,5 +27,6 @@
     </div>
   </div>
 </div>
+
 <!--入口-->
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>

@@ -1,3 +1,5 @@
+$enable-gradients: true !default;
+
 @mixin background-linear($start, $middle, $end) {
   background: $middle;
   $colors: top, $start 0%, $middle 50%, $end 100%;
