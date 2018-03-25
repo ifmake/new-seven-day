@@ -20,4 +20,5 @@ import { OrganComponent } from './organ/organ.component';
     providers: [],
     bootstrap: []
 })
+
 export class SystemModule {}

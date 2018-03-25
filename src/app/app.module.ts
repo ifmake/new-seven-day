@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+// echart
+import { NgxEchartsModule } from 'ngx-echarts';
 
 import { rootRouterConfig } from 'app/router/app.router';
 
@@ -66,6 +68,7 @@ import {WarehouseComponent} from './components/audit/warehouse/warehouse.compone
     BrowserModule,
     FormsModule,
     HttpModule,
+    NgxEchartsModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [],

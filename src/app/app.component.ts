@@ -28,7 +28,7 @@ export class AppComponent extends CommonComponent implements OnInit{
 
   constructor(private router: Router) {
     super()
-    this.logoPath = GlobalService.getImgPath('logo');
+    this.logoPath = GlobalService.getImgPath('logo.png');
     this.navShow = false;
   }
   ngOnInit(){

@@ -33,15 +33,19 @@ import {WarehouseComponent} from '../components/audit/warehouse/warehouse.compon
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full'},
-    { path: 'login', component: LoginComponent},
+  { path: 'login', component: LoginComponent},
     // 系统设置
-    { path: 'system', component: SystemComponent, children: [
+  {
+    path: 'system', component: SystemComponent,
+    // loadChildren:'app/components/system/system.module#SystemModule',
+    children: [
         { path: '', redirectTo: 'organ', pathMatch: 'full' },
         { path: 'organ', component: OrganComponent},
         { path: 'rights', component: RightsComponent },
         { path: 'manage', component: ManageComponent },
         { path: 'examine', component: ExamineComponent }
-    ]},
+    ]
+  },
   // 库存管理
     { path: 'stock', component: StockComponent, children: [
       { path: '', redirectTo: 'initial', pathMatch: 'full' },

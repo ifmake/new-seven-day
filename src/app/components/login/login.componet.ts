@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router/src/router';
+import { GlobalService} from '../../services/global-service'
+import { AppService } from 'app/services/app-service';
 
 @Component({
     selector: 'app-login',
@@ -7,16 +9,15 @@ import { Router } from '@angular/router/src/router';
     styleUrls: ['./login.component.scss']
 })
 
-export class LoginComponent implements OnInit {
-    companyLogoPath1: string;
-    companyLogoPath2: string;
-    fruitPath1: string;
-    fruitPath2: string;
+export class LoginComponent extends AppService implements OnInit {
+    kiwifruit: string;
+    title: string;
+    lemon: string;
     constructor(private router: Router) {
-            this.companyLogoPath1 = '../../assets/img/login_10.png',
-            this.companyLogoPath2 = '../../assets/img/login_06.png',
-            this.fruitPath1 = '../../assets/img/login_03.png',
-            this.fruitPath2 = '../../assets/img/login_14.png'
+            super();
+            this.title = GlobalService.getImgPath('title.png'),
+            this.lemon = GlobalService.getImgPath('lemon.png'),
+            this.kiwifruit = GlobalService.getImgPath('kiwifruit.png')
     }
 
     ngOnInit(){

@@ -4,7 +4,7 @@ import { OrganComponent } from '../components/system/organ/organ.component';
 
 export const systemRouter: Routes = [
     {
-        path: 'system', component: SystemComponent,
+        path: '', component: SystemComponent,
         children: [
             { path: '', redirectTo: 'organ', pathMatch: 'full' },
             { path: 'organ', component: OrganComponent},
