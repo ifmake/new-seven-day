@@ -2,6 +2,11 @@
 @import 'color/color';
 @import 'margin/margin';
 @import 'room-size/room-size';
+@import 'text/text';
+@import 'minxis/cente';
+@import 'minxis/background-linear';
+
+@import 'login/login';
 
 /*全局变量设定*/
 
@@ -10,6 +15,60 @@
 /*
 路由导航
 */
+html, body{
+    width: 100%;
+    height: 100%;
+    background: $cyan;
+    // @include background-linear(#94dffd,#34daff,#31acbf);
+}
+.row {
+    margin:0;
+}
+a {
+    width: 100%;
+    height: 100%;
+    background-color:transparent!important;
+    &:hover,:focus,:active{
+    text-decoration: none;
+    }
+}
+/*导航路由样式*/
+.site-navbar{
+     box-shadow: 0 2px 5px #1b5963;
+    .nav{
+        li.active{
+             background: $cyan1;
+            a{
+                background: $cyan1;
+                color: $white;
+                border-left: 1px solid $cyan;
+                border-right: 1px solid $cyan;
+                &:hover,:focus,:active{
+                 background: $cyan1;
+                }
+             }
+         }
+        li {
+            &:hover{
+                background: $cyan1;
+                color: $white;
+            }
+            a{
+                border-radius: 0;
+                color: $gray;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+                &:hover{
+                    background: $cyan1;
+                    border-left: 1px solid $cyan;
+                    border-right: 1px solid $cyan;
+                    color: $white
+                }
+            }
+        }
+    }
+}
+
 .row {
     padding: 10px 15px;
     .site-menus {
@@ -25,9 +84,15 @@
             line-height: 50px;
             border-top: 1px solid $gray;
             border-bottom: 1px solid $gray;
+            a {
+                display: block;
+            }
+<<<<<<< HEAD
+=======
             &:hover{
                 border-left:3px solid $theme-color;
             }
+>>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
         }
       .active{
         border-left:3px solid $theme-color;
@@ -35,3 +100,7 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482

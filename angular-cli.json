@@ -20,8 +20,16 @@
       "styles": [
         "./style/style.scss"
       ],
+<<<<<<< HEAD
       "scripts": [],
       "environmentSource": "environments/environment.ts",
+=======
+      "scripts": [
+        "../node_modules/echarts/dist/echarts.min.js",
+        "../node_modules/echarts/map/js/china.js",
+        "../node_modules/echarts/dist/extension/bmap.js"
+      ],
+>>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"

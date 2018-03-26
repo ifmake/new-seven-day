@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, NavigationStart, NavigationEnd } from '@angular/router';
+
 import { CommonComponent } from 'app/components/common/common.component';
+
 import { GlobalService } from 'app/services/global-service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,12 +12,20 @@ import { GlobalService } from 'app/services/global-service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent extends CommonComponent implements OnInit{
-  // logo位置
+  // log路径
   logoPath: string;
+<<<<<<< HEAD
 
   // 导航数据
   topNav = [
     { name: '登陆', url: 'login' },
+=======
+  //展示导航否
+  navShow:boolean;
+
+  // 导航数据
+  topNav = [
+>>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
     { name: '系统设置', url: 'system'},
     { name: '库存管理', url: 'stock' },
     { name: '销售管理', url: 'sell' },
@@ -21,10 +33,30 @@ export class AppComponent extends CommonComponent implements OnInit{
     { name: '统计报表', url: 'audit' }
   ]
 
-  constructor() {
+  constructor(private router: Router) {
     super()
-    this.logoPath = GlobalService.getImgPath('logo');
+    this.logoPath = GlobalService.getImgPath('logo.png');
+    this.navShow = false;
   }
-  ngOnInit(){}
+  ngOnInit(){
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (/login/.test(event.url)) {
+          this.navShow = false;
+        }else {
+          this.navShow = true;
+        }
+      }
+    })
+  }
 
+  /**
+   * 注销登陆
+   */
+
+  loginOut() {
+    this.navShow = false ;
+    this.router.navigate(['login']);
+  }
+  
 }
