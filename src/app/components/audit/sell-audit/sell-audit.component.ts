@@ -1,23 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonComponent } from '../../common/common.component';
 
-<<<<<<< HEAD
-=======
 declare var echarts: any;
 
->>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
 @Component({
   selector: 'app-rights',
   templateUrl: './sell-audit.component.html'
 })
 
 export class SellAuditComponent extends CommonComponent implements OnInit {
-<<<<<<< HEAD
-  constructor() {
-    super();
-  }
-  ngOnInit() { }
-=======
   // 销售报表
   sellOption:any;
   constructor() {
@@ -111,5 +102,4 @@ export class SellAuditComponent extends CommonComponent implements OnInit {
       ]
     };
   }
->>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
 }

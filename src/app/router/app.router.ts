@@ -32,12 +32,6 @@ import {BuyAuditComponent} from '../components/audit/buy-audit/buy-audit.compone
 import {WarehouseComponent} from '../components/audit/warehouse/warehouse.component';
 
 export const rootRouterConfig: Routes = [
-<<<<<<< HEAD
-    { path: '', redirectTo: 'login', pathMatch: 'full'},
-    { path: 'login', component: LoginComponent},
-    // 系统设置
-    { path: 'system', component: SystemComponent, children: [
-=======
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent},
     // 系统设置
@@ -45,7 +39,6 @@ export const rootRouterConfig: Routes = [
     path: 'system', component: SystemComponent,
     // loadChildren:'app/components/system/system.module#SystemModule',
     children: [
->>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
         { path: '', redirectTo: 'organ', pathMatch: 'full' },
         { path: 'organ', component: OrganComponent},
         { path: 'rights', component: RightsComponent },
@@ -78,34 +71,6 @@ export const rootRouterConfig: Routes = [
       { path: 'buy-order', component: BuyOrderComponent},
       { path: 'receipt', component: ReceiptComponent},
     ]},
-<<<<<<< HEAD
-  // 库存管理
-    { path: 'stock', component: StockComponent, children: [
-      { path: '', redirectTo: 'initial', pathMatch: 'full' },
-      { path: 'initial', component: InitialComponent},
-      { path: 'materiel', component: MaterielComponent},
-      { path: 'finance-manage', component: FinanceManagelComponent},
-      { path: 'apply', component: ApplyComponent},
-      { path: 'business', component: BusinessComponent},
-      { path: 'finance-search', component: FinanceSearchComponent},
-    ]},
-  // 销售管理
-    { path: 'sell', component: SellComponent, children: [
-      { path: '', redirectTo: 'customer', pathMatch: 'full' },
-      { path: 'customer', component: CustomerComponent},
-      { path: 'order', component: OrderComponent},
-      { path: 'deliver-goods', component: DeliverGoodsComponent},
-    ] },
-  // 采购管理
-    { path: 'buy', component: BuyComponent, children: [
-      { path: '', redirectTo: 'provide', pathMatch: 'full' },
-      { path: 'provide', component: ProvideComponent},
-      { path: 'procurement', component: ProcurementComponent},
-      { path: 'buy-order', component: BuyOrderComponent},
-      { path: 'receipt', component: ReceiptComponent},
-    ]},
-=======
->>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
   // 报表统计
     { path: 'audit', component: AuditComponent, children: [
       { path: '', redirectTo: 'sell-audit', pathMatch: 'full' },

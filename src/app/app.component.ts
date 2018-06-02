@@ -14,18 +14,11 @@ import { GlobalService } from 'app/services/global-service';
 export class AppComponent extends CommonComponent implements OnInit{
   // log路径
   logoPath: string;
-<<<<<<< HEAD
-
-  // 导航数据
-  topNav = [
-    { name: '登陆', url: 'login' },
-=======
   //展示导航否
   navShow:boolean;
 
   // 导航数据
   topNav = [
->>>>>>> 1ab8f337f88c5900625bc0cbbaafd92e284cb482
     { name: '系统设置', url: 'system'},
     { name: '库存管理', url: 'stock' },
     { name: '销售管理', url: 'sell' },
